@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>monster_hunter2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_wrap">
+        <!-- a박스 -->
+        <div class="a_box"> 
+            <div class="a_banner">
+                <div class="header_top">
+                    <div class="a_banner_logo"><img src="img_mon/logo_title.png" alt=""></div>
+                    <div class="icon_wrap">
+                    <div class="a_banner_cheack"><img src="img_mon/icon1.png" alt=""></div>
+                    <div class="a_banner_profile"><img src="img_mon/icon2.png" alt=""></div> 
+                </div>
+            </div>
+                <div class="a_line"></div>
+        </div>
+                    <!-- second -->
+                    <div class="a_img_area">
+                        <div class="a_img">
+                            <div class="img_place"><img src="img_mon2/revel.png" alt=""></div>
+                        </div>
+
+                        <div class="a_txt_wrap">
+                            <div class="a_01 font01">
+                                <div class="a_box_main_txt">
+                                몬스터헌터 <span class="a_box_main_txt_white">월드 도감 오픈</span>
+                                </div>
+                            </div>
+                            <div class="a_02 font02">다양한 정보들을 만나보세요~</div>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- b-box -->
+                    <div class="b_box">
+                        
+                        <div class="b_title_wrap">
+                            <span class="orange_txt">BEST</span> <span class="white_txt">SHOT</span>
+                        </div>
+
+                        <div class="b_box_container">
+                            
+                            <div class="b_item top_big">
+                                <img src="img_mon/box_img.jpg" alt="상단 메인 이미지">
+                            </div>
+
+                            <div class="bottom_grid">
+                                
+                                <div class="left">
+                                    <div class="b_item mid_grid">
+                                        <img src="img_mon/main_box2.jpg" alt="전투 장면">
+                                    </div>
+                                    <div class="small_row">
+                                        <div class="b_item small_small">
+                                            <img src="img_mon2/game_char.jpg" alt="헌터 장비">
+                                        </div>
+                                        <div class="b_item small_small">
+                                            <img src="img_mon2/main_cha3.jpg" alt="아이루 장비">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="right">
+                                    <div class="b_item tall_grid">
+                                        <img src="img_mon2/b_boximg2.jpg" alt="리오레우스">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="more_btn_wrap">
+                            <a href="#" class="more_btn">
+                                <img src="img_mon2/button.png" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <!-- c_box -->
+                <div class="c_box">
+                    <div class="c_title_wrap">
+                        <span class="orange_txt">몬스터</span> <span class="white_txt">도감</span>
+                    </div>
+
+                    <div class="c_filter_grid">
+                        <div class="c_btn active">전체</div>
+                        <div class="c_btn">수룡종</div>
+                        <div class="c_btn">어룡종</div>
+                        <div class="c_btn">비룡종</div>
+                        <div class="c_btn">고룡종</div>
+                        <div class="c_btn">아수종</div>
+                        <div class="c_btn">잔존생물</div>
+                        <div class="c_btn">조룡종</div>
+                    </div>
+
+                    <div class="mon_list">
+
+                        <div class="m_item" onclick="toggleMonster(this)">
+                            
+                            <div class="m_view_small">
+                                <div class="m_thumb">
+                                    <img src="img_mon2/icon_78.jpg" alt="얀가루루가">
+                                </div>
+                                <div class="m_info">
+                                    <div class="m_stars">★★★</div>
+                                    <div class="m_type">흑량조</div>
+                                    <div class="m_name">상처 입은 얀가루루가</div>
+                                </div>
+                                <div class="m_stats_img">
+                                    <img src="img_mon/detail_inf.png" alt="약점정보"> 
+                                </div>
+                            </div>
+
+                            <div class="m_view_detail">
+                                <div class="m_view_blur_hurt"></div>
+                                <img src="img_mon/hurt_yan.webp" class="detail_bg" alt="배경">
+                                
+                                <div class="detail_txt_layer">
+                                    <div class="m_stars">★★★</div>
+                                    <div class="m_type">흑량조</div>
+                                    <div class="m_name">상처 입은 얀가루루가</div>
+                                </div>
+
+                                <div class="weakness_box">
+                                    <img src="img_mon/weekness_box.png" alt="유효 속성표">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m_item" onclick="toggleMonster(this)">
+                            <div class="m_view_small">
+                                <div class="m_thumb">
+                                    <img src="img_mon2/icon_57.jpg" alt="푸케푸케">
+                                </div>
+                                <div class="m_info">
+                                    <div class="m_stars orange_txt">★</div>
+                                    <div class="m_type">독요조</div>
+                                    <div class="m_name">푸케푸케</div>
+                                </div>
+                                <div class="m_stats_img">
+                                    <img src="img_mon/detail_inf.png" alt="약점정보">
+                                </div>
+                            </div>
+
+                            <div class="m_view_detail">
+                                <div class="m_view_blur_hurt"></div>
+                                <img src="img_mon/fufu.webp" class="detail_bg" alt="배경">
+                                <div class="detail_txt_layer">
+                                    <div class="m_stars orange_txt">★</div>
+                                    <div class="m_type">독요조</div>
+                                    <div class="m_name">푸케푸케</div>
+                                </div>
+                                <div class="weakness_box">
+                                    <img src="img_mon/weekness_box2.png" alt="유효 속성표">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m_item" onclick="toggleMonster(this)">
+                            <div class="m_view_small">
+                                <div class="m_thumb">
+                                    <img src="img_mon2/icon_91.jpg" alt="밀라보레아스">
+                                </div>
+                                <div class="m_info">
+                                    <div class="m_stars orange_txt">★★★★★</div>
+                                    <div class="m_type">흑룡</div>
+                                    <div class="m_name">밀라보레아스</div>
+                                </div>
+                                <div class="m_stats_img">
+                                    <img src="img_mon/detail_inf.png" alt="약점정보">
+                                </div>
+                            </div>
+                            
+                            <div class="m_view_detail">
+                                <div class="m_view_blur_hurt"></div>
+                                <img src="img_mon/milla.webp" class="detail_bg" alt="배경">
+                                <div class="detail_txt_layer">
+                                    <div class="m_stars orange_txt">★★★★★</div>
+                                    <div class="m_type">흑룡</div>
+                                    <div class="m_name">밀라보레아스</div>
+                                </div>
+                                <div class="weakness_box">
+                                    <img src="img_mon/weekness_box3.png" alt="유효 속성표">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                    <!-- d_box -->
+            <div class="d_box">
+                <div class="d_title">커뮤니티</div>
+                    <div class="d_community_container"> 
+                        <div class="d_left">
+                            <div class="d_thumb">
+                                <img src="img_mon/box_1.jpg" alt="뉴스 썸네일">
+                            </div>
+                            <div class="d_info">
+                                <div class="d_box_big">
+                                    캡콤, 윈도우 10 이용자에 경고... 몬헌 '향후 업데이트' 시 실행 위험
+                                </div>
+                                <div class="d_news_desc">
+                                    캡콤이 PC 이용자를 대상으로 몬스터 헌터: 월드, 몬스터 헌터 라이즈, 몬스터 헌터 와일즈 등 주요 타이틀이 윈도우 10 운영체제 지원을 종료한다고 밝혔다......
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d_right">
+                            <div class="d_list_item">
+                                <div class="d_list_tit">[질문] 형님들 빨리먹기 흡입주가 안보여요</div>
+                                <div class="d_list_desc">
+                                    형님들 빨리먹기 흡입주가 안보여요<br>
+                                    헌랭 350인데 방어구 1렙 장식품에 흡입주가 없고<br>
+                                    스킬 정렬에서도 빨리먹기가 안보여요......
+                                </div>
+                            </div>
+                            <div class="d_list_item">
+                                <div class="d_list_big">[질문] 형님들 빨리먹기 흡입주가 안보여요</div>
+                                <div class="d_list_desc">
+                                    형님들 빨리먹기 흡입주가 안보여요<br>
+                                    헌랭 350인데 방어구 1렙 장식품에 흡입주가 없고<br>
+                                    스킬 정렬에서도 빨리먹기가 안보여요......
+                                </div>
+                            </div>
+                            <div class="d_list_item">
+                                <div class="d_list_big">[질문] 형님들 빨리먹기 흡입주가 안보여요</div>
+                                <div class="d_list_desc">
+                                    형님들 빨리먹기 흡입주가 안보여요<br>
+                                    헌랭 350인데 방어구 1렙 장식품에 흡입주가 없고<br>
+                                    스킬 정렬에서도 빨리먹기가 안보여요......
+                                </div>
+                            </div>
+                            <div class="d_list_item">
+                                <div class="d_list_big">[질문] 형님들 빨리먹기 흡입주가 안보여요</div>
+                                <div class="d_list_desc">
+                                    형님들 빨리먹기 흡입주가 안보여요<br>
+                                    헌랭 350인데 방어구 1렙 장식품에 흡입주가 없고<br>
+                                    스킬 정렬에서도 빨리먹기가 안보여요......
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- e_box -->
+        <div class="e_box">
+    <div class="e_box_container">
+        <h2 class="e_title">
+            더 다양한 정보는 공식 사이트 및<br>
+            인스타그램을 확인해주세요!
+        </h2>
+
+        <div class="e_content_img">
+            <img src="img_mon/bg_001.png" alt="게임 이미지">
+        </div>
+        <div class="e_link">
+            <a href="https://www.monsterhunter.com/wilds/ko-kr/">
+            <img src="img_mon/off.png" alt="공식 사이트ㅇ">
+            </a>
+            <a href="https://www.instagram.com/monsterhuntergame/">
+            <img src="img_mon/insta.png" alt="insta">
+            </a>
+        </div>
+    </div>
+</div>
+    <script>
+        function toggleMonster(element) {
+            // 1. 이미 열려있는지 확인
+            const isActive = element.classList.contains('active');
+
+            // 2. 다른 모든 카드의 active 클래스 제거 (하나만 열리게 하려면)
+            const allItems = document.querySelectorAll('.m_item');
+            allItems.forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // 3. 클릭한 카드가 닫혀있던 상태라면 active 추가
+            if (!isActive) {
+                element.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
